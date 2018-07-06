@@ -19,6 +19,12 @@ app.post("/api/register", auth_controller.register);
 
 app.post("/api/login", auth_controller.login);
 
+app.get("/api/posts", auth_controller.get_posts);
+
+app.get("/api/search/:id", auth_controller.get_posts);
+
+app.get("/api/post/:id", auth_controller.get_post);
+
 
 
 
